@@ -1,0 +1,166 @@
+/* Container styles */
+.rule-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100%;
+    margin: auto;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* Main content layout - set to take 80%-20% of the screen width */
+.main-content {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+
+/* Rule creation and rule evaluation container styles */
+.rule-creation{
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.rule-evaluation{
+    padding: 35px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    width: 100%;
+
+}
+
+
+
+/* 80% and 20% width allocation with responsive adjustments */
+.rule-creation {
+    flex: 4;
+}
+
+.rule-evaluation {
+    flex: 1;
+}
+
+/* Heading styles with smaller font size */
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Form styling with controlled spacing */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Input fields - reduce font size and spacing for compact design */
+input[type="text"],
+input[type="number"] {
+    padding: 8px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+/* Larger textarea specifically for the ruleString input */
+textarea {
+    height: 80px;
+    resize: none;
+    padding: 8px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+/* Button styling with adjusted padding and font size */
+button {
+    padding: 8px 10px;
+    width: 200px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: auto
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Rule list styling with spacing adjustments */
+.rule-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.rule-item {
+    padding: 10px;
+    font-size: 0.9rem;
+    background-color: #eef;
+    border-left: 5px solid #007bff;
+    border-radius: 4px;
+    position: relative;
+    word-wrap: break-word;
+}
+
+.rule-item button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 5px 8px;
+    font-size: 0.8rem;
+    background-color: #dc3545;
+    width: 75px;
+}
+
+.rule-item button:hover {
+    background-color: #c82333;
+}
+
+/* Evaluation results styling with proper alignment */
+.evaluation-results {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff5e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.result-item {
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.result-item.eligible {
+    background-color: #d4edda;
+    border-left: 5px solid #28a745;
+}
+
+.result-item.not-eligible {
+    background-color: #f8d7da;
+    border-left: 5px solid #dc3545;
+}
